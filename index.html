@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8">
+        <meta name="description" content="blog de poésie contemporaine en ligne">
+        <title>Cristalide, poésie en ligne</title>
+        <link rel="stylesheet" href="accueil.css">   
+    </head>
+    <body>
+        <header>
+            <nav>
+                <figure>
+                    <img src="images/cristalmenulight.png" alt="menu" height="105">
+                    <figcaption>Menu</figcaption>
+                </figure>
+                <ul>
+                    <li><a href=#apropos>À propos</a></li>
+                    <li class="auteursb">Les auteurs</li>
+                        <ul>
+                            <li><a href="auteurs/Amaliaachard.html">Amalia Achard</a></li>
+                            <!-- à publier plus tard
+                            <li><a href="auteurs/Marinerose.html">Marine Rose</a></li> -->
+                        </ul>
+                </ul> 
+            </nav>
+            <video class="banniere" width="600" height="400" autoplay muted >
+                <source src="./images/IMG-7874 (1).mp4" type="video/mp4">
+            </video>
+            <h1>La Cristalide</h1>
+            <p class="slogan"><strong><em> chrysalide de cristal de la poésie en ligne<br>
+            Entrez</em></strong></p>
+        </header>
+        <main>
+            <h2>Les derniers poèmes publiés</h2>
+            <article class="articles">
+                <div class="date">
+                    Publié le 
+                    <script> 
+                        const date = new Date(2022,10,8,20,02) 
+                        const options = {
+                            weekday: 'long', 
+                            year: 'numeric',
+                            month: 'long',
+                            day: 'numeric',
+                            hour: '2-digit',
+                        minute: '2-digit'
+                        }
+                        const dateDisplayed = new Intl.DateTimeFormat ('fr-FR', options).format(date)
+                        document.write(dateDisplayed)
+                    </script> 
+                </div>
+                <video width="100" height="200" autoplay muted>
+                    <source src="images/amaliavideo.mp4" type="video/mp4">
+                </video> 
+                <p>4 poèmes choisis d'Amalia Achard</p>
+                <a class="lienpoemes" href="amaliaachard.html">
+                    <p class="lesdecouvrir">Les découvrir</p>
+                    <img src="images/cristalmenulight.png" width="57px" alt="lien vers les poèmes">
+                </a>
+            </article>
+        </main>
+        <footer class="footer">
+            <video width="200" height="300" playsinline muted>
+                <source src="images/video marine rose 3D.mp4"type="video/mp4">
+            </video> 
+            <h2 id="apropos">À propos</h2>
+            <h3>Bienvenue dans la Cristalide!</h3>
+            <p>Pour ceux qui ne me connaissent pas encore, je suis une poétésse née à Annecy en 1992, éditée depuis une dizaine d'années, vous me retrouverez parmi les auteurs de ce site web sous le nom de plume Marine Rose!<br>
+            J'ai eu l'idée de créer un blog de poésie contemporaine qui aurait les atours d'une revue de poésie en ligne avec un partage de poèmes majoritairement libérés et parfois audio. 
+            Pourquoi cette initiative? Pour deux raisons principalement.<br>
+            Tout d'abord, j'ai pu me rendre compte qu'une mine d'or littéraire existait grâce à quelques années de "vie" sur les réseaux sociaux où j'ai pu rencontrer et lire régulièrement d'autres poètes (vivants! Mais invisibles du grand public pour la plupart). <br>
+            Pour être honnête, auparavant, je ne me retrouvais pas (souvent du tout) dans la poésie contemporaine qui était la plus mise en avant (dans les librairies...) et je me contentais de lire des poètes anciens. Toutefois après les découvertes que j'ai pu faire grâce au web, j'ai trouvé des sources d'émerveillement et d'inspiration régulières. <br>
+            Aujourd'hui j'ai à coeur de partager des poèmes, critiques, événements qui s'inscrivent dans ce que j'entrevois comme "l'esprit de la Cristalide". Je souhaite rendre une place d'honneur à ces poètes dont les mots nous apportent une grande richesse, esthétique, spirituelle, et je dirais: littéraire-humaine.<br> 
+            J'évoquais aussi une deuxième raison, la voici: depuis quelques temps je me forme au métier de développeur web, un blog de poésie, c'était l'occasion de créer un premier site web! Je vous souhaite donc une bonne visite, n'hésitez pas à laisser vos impressions en commentaire pour faire vivre la Cristalide.
+            </p>
+            <div class="bottombar">
+                <button class="bottombar-items"><a href="marinerose.html">Voir ma page d'auteur</a></button>
+                <button class="bottombar-items"><a href="mailto:marine.rose74@gmail.com">Me contacter</a></button>
+                <a class="bottombar-items" href="https://facebook.com/lacristalide"><img class="iconefb" src="images/iconefb.png" alt="icône Facebook" width="30em"></a>
+            </div>
+        </footer>
+        <script type="text/javascript" src="Auteurs/anim.js"></script>
+    </body>
+
+</html>

@@ -1,0 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital@1&family=Dancing+Script:wght@400;500;600;700&display=swap');
+body {
+    background-color:black;
+    color:mintcream;
+}
+h1 {
+    color:mintcream;
+    font-size: 50px;
+    text-align: center;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-family: 'Dancing Script', cursive; 
+}   

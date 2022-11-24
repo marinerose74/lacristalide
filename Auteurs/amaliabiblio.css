@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital@1&family=Dancing+Script:wght@400;500;600;700&display=swap');
+body {
+    background-color: rgb(0, 0, 0);
+    opacity: 0.9;
+    color: mintcream;
+    font-family:'Dancing Script', cursive;
+    margin: 0 auto;
+}
+h1 {
+    margin-left: 20vw;
+    padding: 40px 0 30px 0;
+    margin-bottom: 10px;
+}
+.cristalback:hover {
+    transform: scale(1.1);
+    filter: drop-shadow(0em 0em 0.2em white);
+    transition: .60s;
+}
+.flex-container {
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    width: 60%;
+    margin: 0 auto;
+    align-items: center;
+    padding: 50px 50px;
+    border: 2px solid mintcream;
+    border-radius: 10%;
+    box-shadow: inset 0 0 0.5em mintcream, 0 0 1em  rgb(155, 187, 219) ;
+}
+.flex-items {
+    margin-bottom: 15px;
+    width: 100%;
+}
+h2 {
+    font-size: 1.4em;
+    color: rgb(155, 187, 219);
+}
+h3 {
+    font-size: 1.2em;
+    color: rgb(155, 187, 219);
+}
+h4 {
+    font-size: 1.1em;
+}
+.prix {
+    display: block;
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+    font-size: 0.7em;
+    text-align: center;
+    padding-bottom: 20px;
+}
+@media screen and (min-width:700px) {
+    figure {
+        margin-bottom: 30px;
+    }
+    figure img {
+        height: 75px;
+    }
+}
+@media screen and (max-width:500px) {
+    h1 {
+        font-size: 1.6em;
+        padding-bottom: 10px;
+    }
+}
